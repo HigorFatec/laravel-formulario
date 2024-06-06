@@ -4,24 +4,25 @@
     <title>Novo Registro Incluido</title>
 </head>
 <body>
-    <p>Nome Completo: {{ $fornecedor_fisico->nome }}</p>
-    <p>CPF {{ $fornecedor_fisico->cpf }}</p>
-    <p>RG: {{ $fornecedor_fisico->rg }}</p>
-    <p>Rua: {{ $fornecedor_fisico->rua }}</p>
-    <p>Numero: {{ $fornecedor_fisico->numero }}</p>
-    <p>Bairro: {{ $fornecedor_fisico->bairro }}</p>
-    <p>Cidade: {{ $fornecedor_fisico->cidade }}</p>
-    <p>Estado: {{ $fornecedor_fisico->estado }}</p>
-    <p>CEP: {{ $fornecedor_fisico->cep }}</p>
-    <p>Complemento: {{ $fornecedor_fisico->complemento }}</p>
-    <p>Banco: {{ $fornecedor_fisico->banco }}</p>
-    <p>Agencia {{ $fornecedor_fisico->agencia }}</p>
-    <p>Conta: {{ $fornecedor_fisico->conta }}</p>
-    <p>Tipo de Conta: {{ $fornecedor_fisico->tipo_conta }}</p>
-    <p>Pix: {{ $fornecedor_fisico->pix }}</p>
-    <p>Telefone Fixo: {{ $fornecedor_fisico->telefone_fixo }}</p>
-    <p>Celular: {{ $fornecedor_fisico->celular }}</p>
-    <p>Email: {{ $fornecedor_fisico->email }}</p>
+    <p>Nome Completo: {{ $dados['nome'] }}</p>
+    <p>CPF: {{ $dados['cpf'] }}</p>
+    <p>RG: {{ $dados['rg'] }}</p>
+    <p>Rua: {{ $dados['rua'] }}</p>
+    <p>Numero: {{ $dados['numero'] }}</p>
+    <p>Bairro: {{ $dados['bairro'] }}</p>
+    <p>Cidade: {{ $dados['cidade'] }}</p>
+    <p>Estado: {{ $dados['estado'] }}</p>
+    <p>CEP: {{ $dados['cep'] }}</p>
+    <p>Complemento: {{ $dados['complemento'] }}</p>
+    <p>Banco: {{ $dados['banco'] }}</p>
+    <p>Agencia: {{ $dados['agencia'] }}</p>
+    <p>Conta: {{ $dados['conta'] }}</p>
+    <p>Tipo de Conta: {{ $dados['tipo_conta'] }}</p>
+    <p>Pix: {{ $dados['pix'] }}</p>
+    <p>Telefone Fixo: {{ $dados['telefone_fixo'] }}</p>
+    <p>Celular: {{ $dados['celular'] }}</p>
+    <p>Email: {{ $dados['email'] }}</p>
 
     <p>Atenciosamente <b>Grupo Cargo Polo</b></p>
 </body>
+</html>

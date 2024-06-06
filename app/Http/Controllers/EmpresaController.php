@@ -3,7 +3,6 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
-use App\Models\Empresa;
 use Illuminate\Support\Facades\Mail;
 
 class EmpresaController extends Controller
@@ -30,31 +29,15 @@ class EmpresaController extends Controller
             'email' => 'required|email',
         ]);
 
-         // Adiciona o IP e o endereço da máquina aos dados da empresa
+        // Adiciona o IP e o endereço da máquina aos dados da empresa
         $data = $request->all();
 
-        $ip = $request->ip(); // Pega o IP do servidor
-        $public_ip = $request->header('X-Forwarded-For'); // Tenta pegar o IP público do cliente através dos cabeçalhos HTTP
-
-        if ($public_ip) {
-            // Use o endereço IP público do cliente se disponível
-            $data['ip'] = $public_ip;
-        } else {
-            // Use o endereço IP do servidor se não houver um endereço IP público disponível
-            $data['ip'] = $ip;
-        }
-        
-
-        // Cria a empresa com os dados fornecidos
-        $empresa = Empresa::create($data);
-        
-
-        Mail::send('emails.empresa', ['empresa' => $empresa], function($message) use ($empresa) {
-            $message->to(['cadastro.suprimentos@grupocargopolo.com.br', 'amanda.bellomo@grupocargopolo.com.br' ]);
+        Mail::send('emails.empresa', ['dados' => $data], function($message) {
+            $message->to('higor.05@hotmail.com');
+            // $message->to(['cadastro.suprimentos@grupocargopolo.com.br', 'amanda.bellomo@grupocargopolo.com.br' ]);
             $message->subject('Nova Empresa Registrada');
         });
 
         return redirect()->route('empresa.success');
-
     }
 }

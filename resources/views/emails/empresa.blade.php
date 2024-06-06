@@ -4,18 +4,19 @@
     <title>Nova Empresa Registrada</title>
 </head>
 <body>
-    <p>Razao Social: {{ $empresa->razao_social }}</p>
-    <p>Inscricao Estadual: {{ $empresa->inscricao_estadual }}</p>
-    <p>CNPJ: {{ $empresa->cnpj }}</p>
-    <p>Banco: {{ $empresa->banco }}</p>
-    <p>Agencia {{ $empresa->agencia }}</p>
-    <p>Conta: {{ $empresa->conta }}</p>
-    <p>Tipo de Conta: {{ $empresa->tipo_conta }}</p>
-    <p>Pix: {{ $empresa->pix }}</p>
-    <p>Telefone_1: {{ $empresa->telefone_1 }}</p>
-    <p>telefone_2: {{ $empresa->telefone_2 }}</p>
-    <p>Direto com: {{ $empresa->direto_com }}</p>
-    <p>Email: {{ $empresa->email }}</p>
+    <p>Razao Social: {{ $dados['razao_social'] }}</p>
+    <p>Inscricao Estadual: {{ $dados['inscricao_estadual'] }}</p>
+    <p>CNPJ: {{ $dados['cnpj'] }}</p>
+    <p>Banco: {{ $dados['banco'] }}</p>
+    <p>Agencia: {{ $dados['agencia'] }}</p>
+    <p>Conta: {{ $dados['conta'] }}</p>
+    <p>Tipo de Conta: {{ $dados['tipo_conta'] }}</p>
+    <p>Pix: {{ $dados['pix'] }}</p>
+    <p>Telefone 1: {{ $dados['telefone_1'] }}</p>
+    <p>Telefone 2: {{ $dados['telefone_2'] }}</p>
+    <p>Direto com: {{ $dados['direto_com'] }}</p>
+    <p>Email: {{ $dados['email'] }}</p>
 
     <p>Atenciosamente <b>Grupo Cargo Polo</b></p>
 </body>
+</html>
