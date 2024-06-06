@@ -48,8 +48,8 @@
             <div class="nav-content">
             <ul class="tabs tabs-transparent">
                 <li class="tab"><a class="active" href="/">Home</a></li>
-                <li class="tab"><a class="fornecedor" href="fornecedor_juridico">Fornecedor Jurídico</a></li>
-                <li class="tab"><a class="fornecedor_fisico" href="fornecedor_fisico">Fornecedor Físico</a></li>
+                <li class="tab"><a class="fornecedor" href="fornecedor_juridico">Fornecedor P.J.</a></li>
+                <li class="tab"><a class="fornecedor_fisico" href="fornecedor_fisico">Fornecedor Pessoa Física</a></li>
 
             </ul>
             </div>
