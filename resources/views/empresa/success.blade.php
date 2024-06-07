@@ -6,7 +6,7 @@
 <body>
     <script>
         window.onload = function() {
-            alert('Formulário registrado e enviado com Sucesso!');
+            alert('Formulário registrado e enviado com Sucesso! ');
             // Você também pode redirecionar para outra página após o pop-up se desejar
             window.location.href = '/';
         };
