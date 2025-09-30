@@ -50,5 +50,6 @@
 
 <p>Para acessar o formulário, clique <a href="https://ww2.grupocargopolo.com.br:14803/">aqui</a></p>
 
-<img width="1533" height="857" alt="image" src="https://github.com/user-attachments/assets/314ef67f-f904-44fa-bf4e-5fc38e8ce7ad" />
+<img width="1427" height="719" alt="image" src="https://github.com/user-attachments/assets/49955860-f3e8-41f0-902b-359ab242142f" />
+
 
